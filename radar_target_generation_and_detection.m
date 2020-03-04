@@ -82,7 +82,7 @@ Mix_fft_2s = abs(Mix_fft);
 % Output of FFT is double sided signal, but we are interested in only one side of the spectrum.
 % Hence we throw out half of the samples.
 Mix_fft_1s = Mix_fft_2s(1:Nr/2 + 1,:);
-Mix_fft_1s(2:end-1,:) = 2 * Mix_fft_1s(2:end-1,:);
+%Mix_fft_1s(2:end-1,:) = 2 * Mix_fft_1s(2:end-1,:);
 f = (1/t(2))*(0:(Nr/2))/Nr;
 range = (c * Ts * f) / (2 * Bandwidth);
 
@@ -96,7 +96,7 @@ subplot(2,1,1)
 plot(range,Mix_fft_1s(:,1));
 
  
-axis ([0 range_max 0 1]);
+axis ([0 range_max 0 0.5]);
 
 
 
