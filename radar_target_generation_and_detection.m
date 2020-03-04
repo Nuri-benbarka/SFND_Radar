@@ -132,8 +132,6 @@ figure,surf(doppler_axis,range_axis,RDM);
 %% CFAR implementation
 
 %Slide Window through the complete Range Doppler Map
-
-:
 %Select the number of Training Cells in both the dimensions.
 Tr=20;
 Td=18;
