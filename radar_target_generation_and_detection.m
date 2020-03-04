@@ -20,8 +20,8 @@ c = 3e8;
 % *%TODO* :
 % define the target's initial position and velocity. Note : Velocity
 % remains contant
-R_init = 150;
-vel = 60;
+R_init = 110;
+vel = -20;
 
 
 %% FMCW Waveform Generation
